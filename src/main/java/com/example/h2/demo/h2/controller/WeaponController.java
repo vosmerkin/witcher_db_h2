@@ -135,3 +135,16 @@ public class WeaponController {
     return ResponseEntity.badRequest().body(errors);
   }
 }
+
+/*
+curl -X POST http://localhost:8080/api/weapons \
+        -H "Content-Type: application/json" \
+        -d '{
+        "name": "New Weapon",
+        "category": "Steel Sword",
+        "damage": 300,
+        "effects": "+10% Critical hit chance",
+        "weight": 3,
+        "price": 2000
+        }'
+*/
